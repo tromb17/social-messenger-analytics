@@ -1,2 +1,13 @@
-# social-messenger-analytics
-Educational project: Analytics for a social media app with messenger.   Includes:   - Interactive dashboards (Plotly Dash/Power BI)   - SQL queries for user behavior analysis   - Jupyter notebooks (Python, Pandas, A/B tests)) 
+## 🎯 Project Purpose  
+This is a **learning project** demonstrating:  
+- Building dashboards for social app metrics (DAU, CTR, demographics, retention).  
+- Writing optimized SQL queries for user activity analysis.  
+- Cleaning and visualizing data with Python (Pandas/Matplotlib).
+
+---
+
+## 🛠 Tech Stack  
+- **Data Analysis**: Python (Pandas, Jupyter), SQL, ClickHouse
+- **Visualization**: Apache Superset
+- **Database**: PostgreSQL
+  
