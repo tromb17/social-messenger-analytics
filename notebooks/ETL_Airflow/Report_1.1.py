@@ -55,7 +55,7 @@ def dag_report_troshin():
     def send_report(df, chat_id=None):
         
         df_yesterday = df[-1:]
-        my_token = '8212562168:AAHHWLziZNVKIjr3JMvtQp5IQgY4KBWvSZA' # тут нужно заменить на токен вашего бота
+        my_token = '***' # тут нужно заменить на токен вашего бота
         bot = telegram.Bot(token=my_token) # получаем доступ
         chat_id = chat_id or -1002614297220
 
