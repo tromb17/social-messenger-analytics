@@ -17,7 +17,7 @@ Two interactive dashboards for analyzing user behavior in a social media app wit
   - Gender/age distribution
   - Top active users leaderboard
 
-![Core Metrics](/images/dashboard1_metrics.jpg)
+![Core Metrics](/dashboards/dashboard1_metrics.jpg)
 
 ### Dashboard 2: Anomaly Detection & Campaign Analysis
 **Purpose**: Identify technical issues and measure marketing effectiveness.
@@ -32,7 +32,7 @@ Two interactive dashboards for analyzing user behavior in a social media app wit
   - Missing data from key cities
   - Unexpected traffic source changes
 
-![Anomaly Analysis](/images/dashboard2_anomalies.png)
+![Anomaly Analysis](/dashboards/dashboard2_retention.jpg)
 
 ## 🛠 Technology Stack
 - **Visualization**: Tableau/Power BI/Plotly Dash
