@@ -93,7 +93,7 @@ def dag_alert_troshin():
 
     @task
     def send_alert(df_current, df_previous, metric, threshold_pct):
-        my_token = '8212562168:AAHHWLziZNVKIjr3JMvtQp5IQgY4KBWvSZA'
+        my_token = '***' #токен вашего бота
         bot = telegram.Bot(token=my_token)
         chat_id = -969316925
         
