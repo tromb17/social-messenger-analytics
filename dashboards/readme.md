@@ -35,6 +35,6 @@ Two interactive dashboards for analyzing user behavior in a social media app wit
 ![Anomaly Analysis](/dashboards/dashboard2_retention.jpg)
 
 ## 🛠 Technology Stack
-- **Visualization**: Tableau/Power BI/Plotly Dash
+- **Visualization**: Apache Superset
 - **Analysis**: Python (Pandas, NumPy), SQL
 - **Data**: Synthetic dataset (generated for educational purposes)
