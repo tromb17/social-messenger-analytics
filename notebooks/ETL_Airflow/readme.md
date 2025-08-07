@@ -44,6 +44,8 @@ To run this pipeline locally:
 2. Configure credentials (bot token, chat IDs) appropriately.
 3. Launch the Airflow scheduler and worker services.
 
+For detailed step-by-step analyses, refer to the attached .py files (`Report_1.1.py` and `Report_1.2.py`) code snippets, and intermediate steps leading up to final conclusions.
+
 ## Example Outputs
 
 Daily reports delivered to the Telegram channel look something like this:
