@@ -118,7 +118,7 @@ def dag_final_report_troshin():
             users_by_status = ph.read_clickhouse(query=query, connection=connection)
             return users_by_status
 
-        my_token = '8212562168:AAHHWLziZNVKIjr3JMvtQp5IQgY4KBWvSZA' # токен бота
+        my_token = '***' # токен бота
         bot = telegram.Bot(token=my_token) # получаем доступ
         chat_id = chat_id or -1002614297220 #477555112
 
