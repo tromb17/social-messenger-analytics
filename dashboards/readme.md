@@ -1,5 +1,7 @@
 # Social Media Analytics Dashboards
 
+
+
 Two interactive dashboards for analyzing user behavior in a social media app with messenger functionality. Created as an educational project to demonstrate data analysis and visualization skills.
 
 ## 📌 Project Overview
@@ -38,3 +40,13 @@ Two interactive dashboards for analyzing user behavior in a social media app wit
 - **Visualization**: Apache Superset
 - **Analysis**: Python (Pandas, NumPy), SQL
 - **Data**: Synthetic dataset (generated for educational purposes)
+
+---
+
+Full Dashboards:
+
+1. Interaction of services
+![Dashboard_1](/dashboards/interaction_of_services.jpg)
+
+2. Product metrics analyse
+![Dashboard 2](/dashboards/product_metrics_analyse.jpg)
