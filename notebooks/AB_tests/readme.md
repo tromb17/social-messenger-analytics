@@ -1,43 +1,39 @@
-# A/B Test Analysis
+# AB Testing Analysis Report
 
-This repository contains a Jupyter Notebook analyzing the results of an A/B test conducted on a social media platform's post recommendation algorithm.
+This repository contains the analysis of an A/B test conducted by our data science team from March 28th to April 3rd, 2025. The primary objective was to evaluate a new recommendation algorithm's impact on click-through rate (CTR).
 
 ## Overview
 
-The A/B test was conducted from March 28, 2025 to April 3, 2025, comparing two groups:
-- **Group 1**: Control group (existing recommendation algorithm)
-- **Group 2**: Test group (new recommendation algorithm)
+The experiment involved four groups labeled as Group 0, Group 1, Group 2, and Group 3. Each group received different treatment conditions for comparison purposes.
 
-The primary hypothesis was that the new algorithm in Group 2 would lead to an increase in CTR (Click-Through Rate).
+### Experimental Setup
+- **Group 1 & 2**: Directly compared against each other with one receiving the new algorithm (Group 2) while the other served as control (Group 1).
+- **Group 0 & 3**: Additional groups included for extended analysis, exploring additional metrics such as linearized likes.
 
-## Notebook Contents
+### Key Findings
 
-The analysis includes:
+#### Distribution Differences
+- The distribution of CTR values varied significantly across groups. For instance, Group 2 exhibited bimodal behavior (double peak), indicating potential segmentation within this group.
+- Normal distributions were observed in Groups 0 and 3, making statistical tests more reliable for these groups.
 
-1. **Data Loading**: Connection to ClickHouse database and data extraction
-2. **Exploratory Analysis**: 
-   - Basic statistics and group sizes
-   - CTR distribution visualization
-3. **Statistical Testing**:
-   - T-test comparison of CTR between groups
-   - Mann-Whitney U test (non-parametric alternative)
-4. **Smoothed CTR Calculation**: Adjusted CTR metric to handle variability
-5. **Key Findings**: Interpretation of test results
+#### Statistical Tests
+- **Student’s T-test**: Applied initially but proved less reliable due to anomalous distributions.
+- **Mann-Whitney U Test**: Used as a nonparametric alternative and consistently showed statistically significant differences (low p-values close to zero).
 
-## Key Findings
+#### Linearized Likes Methodology
+- This method adjusted raw CTR values, providing a clearer view of the true performance difference between groups.
+- Both Mann-Whitney U Test and T-test confirmed strong significance when applied to linearized likeness measures.
 
-- The CTR distribution differs between groups (Group 1 appears normal while Group 2 is bimodal)
-- The t-test showed no significant difference (p=0.685)
-- The Mann-Whitney test indicated statistically significant differences (p=4.63e-45)
-- Recommendation: The non-parametric test may be more appropriate given the non-normal distribution in Group 2
+### Recommendations
 
-## Technical Details
+Based on comprehensive testing results:
+- Further investigation is required into why the new algorithm did not perform well in terms of increasing CTR.
+- It may be necessary to revisit or refine the implementation before rolling out changes widely.
 
-**Libraries Used**:
-- Pandas (via pandahouse for ClickHouse connection)
-- Seaborn/Matplotlib for visualization
-- SciPy for statistical tests
-- NumPy for numerical operations
+## Conclusion
 
-**Database Connection**:  
-Configured to connect to ClickHouse using provided credentials.
+While initial results indicate lower CTR for users exposed to the new algorithm, further exploration using advanced techniques like linearization provided deeper insights into performance disparities. Our recommendations aim at ensuring any future rollout aligns better with user engagement goals.
+
+---
+
+For detailed step-by-step analyses, refer to the attached Jupyter notebooks (`A_B_tests_1.ipynb` and `AB_test_linearized.ipynb`) which include visualizations, code snippets, and intermediate steps leading up to final conclusions.
